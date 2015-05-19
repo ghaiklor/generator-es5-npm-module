@@ -70,12 +70,11 @@ module.exports = yeoman.generators.Base.extend({
       fetchLicense.call(this, this.answers['module:license'], function (content) {
         this.answers['module:license-content'] = content;
         this.write('LICENSE', content);
-        done();
-      }.bind(this));
 
-      //npm.load(function () {
-      //  npm.commands.init(done);
-      //});
+        npm.load(function () {
+          npm.commands.init(done);
+        });
+      }.bind(this));
     }.bind(this));
   },
 
