@@ -48,9 +48,7 @@ function fetchLicense(license, cb) {
     if (error) throw new Error(error);
 
     this.sourceRoot(path.join(cacheRoot, username, repository, branch));
-
-    var content = this.read('_licenses/' + license.toLowerCase() + '.txt').replace(/-+[\d\D]*?-+\n\n/, '');
-
+    var content = this.read(['_licenses/', license.toLowerCase(), '.txt'].join('')).replace(/-+[\d\D]*?-+\n\n/, '');
     this.sourceRoot(sourceRoot);
 
     cb(content);
