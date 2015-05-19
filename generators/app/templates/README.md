@@ -1,4 +1,6 @@
-# some-project
+# <%= answers['module:name'] %>
+
+<%= answers['module:description'] %>
 
 ## Getting Started
 
