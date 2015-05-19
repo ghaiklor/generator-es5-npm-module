@@ -1,0 +1,13 @@
+*~
+*#
+.DS_STORE
+.netbeans
+.idea
+nbproject
+.node_history
+
+coverage
+test
+.editorconfig
+.gitignore
+.travis.yml
