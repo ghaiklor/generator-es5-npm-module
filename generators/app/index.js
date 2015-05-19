@@ -15,7 +15,7 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   writing: function () {
-    this.directory(this.sourcePath(), this.destinationPath());
+    this.directory(this.sourceRoot(), this.destinationPath());
   },
 
   install: function () {
