@@ -12,6 +12,10 @@ var QUESTIONS = [{
   name: 'module:description',
   message: 'Type module description'
 }, {
+  type: 'input',
+  name: 'module:author',
+  message: 'Type module author'
+}, {
   type: 'list',
   name: 'module:license',
   message: 'Choose license',
@@ -64,6 +68,7 @@ module.exports = yeoman.generators.Base.extend({
       this.answers = answers;
 
       fetchLicense.call(this, this.answers['module:license'], function (content) {
+        this.answers['module:license-content'] = content;
         this.write('LICENSE', content);
         done();
       }.bind(this));
