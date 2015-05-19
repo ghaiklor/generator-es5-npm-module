@@ -1,0 +1,29 @@
+{
+  "name": "generator-es5-npm-module",
+  "version": "0.1.0",
+  "description": "Yeoman generator for starting ES5 npm module with Mocha, Istanbul, Travis, Coveralls",
+  "license": "MIT",
+  "main": "generators/app/index.js",
+  "repository": "ghaiklor/generator-es5-npm-module",
+  "author": {
+    "name": "Eugene Obrezkov",
+    "email": "ghaiklor@gmail.com",
+    "url": "https://github.com/ghaiklor"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "npm",
+    "module",
+    "ES5"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.19.2",
+    "yosay": "^1.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
