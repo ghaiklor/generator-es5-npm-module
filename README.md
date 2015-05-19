@@ -5,7 +5,7 @@
 ## Getting Started
 
 ```bash
-npm install -g yo ghaiklor/generator-es5-npm-module
+npm install -g yo generator-es5-npm-module
 yo es5-npm-module
 ```
 
