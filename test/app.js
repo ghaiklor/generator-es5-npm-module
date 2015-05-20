@@ -12,9 +12,14 @@ describe('app', function () {
 
   it('Should create root files', function () {
     assert.file([
-      'package.json',
       '.editorconfig',
-      '.jshintrc'
+      '.gitignore',
+      '.jshintrc',
+      '.npmignore',
+      '.travis.yml',
+      'index.js',
+      'package.json',
+      'README.md'
     ]);
   });
 });
