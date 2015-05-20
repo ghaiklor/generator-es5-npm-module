@@ -1,7 +1,6 @@
 var path = require('path');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
-var npm = require('npm');
 
 var QUESTIONS = [{
   type: 'input',
@@ -70,10 +69,7 @@ module.exports = yeoman.generators.Base.extend({
       fetchLicense.call(this, this.answers['module:license'], function (content) {
         this.answers['module:license-content'] = content;
         this.write('LICENSE', content);
-
-        npm.load(function () {
-          npm.commands.init(done);
-        });
+        done();
       }.bind(this));
     }.bind(this));
   },
