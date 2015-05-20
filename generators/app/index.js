@@ -6,19 +6,19 @@ var npm = require('npm');
 var QUESTIONS = [{
   type: 'input',
   name: 'module:name',
-  message: 'Type module name'
+  message: 'Module name'
 }, {
   type: 'input',
   name: 'module:description',
-  message: 'Type module description'
+  message: 'Module description'
 }, {
   type: 'input',
   name: 'module:author',
-  message: 'Type module author'
+  message: 'Your nickname'
 }, {
   type: 'list',
   name: 'module:license',
-  message: 'Choose license',
+  message: 'Choose a license',
   choices: [
     'Apache-2.0',
     'Artistic-2.0',
