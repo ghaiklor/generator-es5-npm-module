@@ -7,6 +7,9 @@ describe('app', function () {
     helpers
       .run(path.join(__dirname, '../generators/app'))
       .withOptions({skipInstall: true})
+      .withPrompts({
+        'module:license': 'MIT'
+      })
       .on('end', done);
   });
 
