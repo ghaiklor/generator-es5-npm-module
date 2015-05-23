@@ -6,6 +6,7 @@
 
 ```bash
 npm install -g yo generator-es5-npm-module
+mkdir my-project && cd my-project
 yo es5-npm-module
 ```
 
