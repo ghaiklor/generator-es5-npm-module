@@ -22,8 +22,8 @@
     "ES5"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.19.2",
-    "yosay": "^1.0.3"
+    "yeoman-generator": "^0.20.1",
+    "yosay": "^1.0.4"
   },
   "devDependencies": {
     "mocha": "^2.2.5"
