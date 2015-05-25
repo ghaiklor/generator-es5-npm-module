@@ -1,6 +1,8 @@
 # generator-es5-npm-module
 
-[![Build Status](https://secure.travis-ci.org/ghaiklor/generator-es5-npm-module.svg?branch=master)](https://travis-ci.org/ghaiklor/generator-es5-npm-module)
+![Build Status](https://img.shields.io/travis/ghaiklor/generator-es5-npm-module.svg) ![Coverage](https://img.shields.io/coveralls/ghaiklor/generator-es5-npm-module.svg) ![Downloads](https://img.shields.io/npm/dm/generator-es5-npm-module.svg) ![npm version](https://img.shields.io/npm/v/generator-es5-npm-module.svg) ![dependencies](https://img.shields.io/david/ghaiklor/generator-es5-npm-module.svg) ![dev dependencies](https://img.shields.io/david/dev/ghaiklor/generator-es5-npm-module.svg) ![License](https://img.shields.io/npm/l/generator-es5-npm-module.svg)
+
+This generator creates project for you where you can start working with your npm module.
 
 ## Getting Started
 
@@ -8,6 +10,33 @@
 npm install -g yo generator-es5-npm-module
 mkdir my-project && cd my-project
 yo es5-npm-module
+```
+
+Or you can create folder with your project and just copy\paste this code to terminal (you should be located under your project folder)
+
+```bash
+npm install -g yo generator-es5-npm-module && yo es5-npm-module
+```
+
+## Project structure
+
+When project is generated you will get project with that structure:
+
+```
+|-- my-project # Root of your project
+  |-- lib # Folder with your source code
+  |  |-- index.js # Some basic script of your module
+  |-- test # Folder with tests for your module
+  |  |-- index.test.js # Testing your main script
+  |  |-- mocha.opts # File for mocha options
+  |-- .editorconfig # editorconfig for IDE with standardized JavaScript code-style
+  |-- .gitignore # gitignore template for NodeJS applications
+  |-- .jshintrc # JSHint configuration
+  |-- .npmignore # npmignore template with some stuff disabled for publish like test or .travis.yml
+  |-- .travis.yml # Travis configuration file with NodeJS 0.10, 0.12 and iojs. Also it sends coverage data to Coveralls
+  |-- index.js # Main script (entry point) because it's defined in package.json
+  |-- package.json # package.json template with minimal data here
+  |-- README.md # Readme with predefined text based on your answers
 ```
 
 ## License
