@@ -11,7 +11,7 @@
     "url": "https://github.com/ghaiklor"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "istanbul cover _mocha"
   },
   "keywords": [
     "yeoman-generator",
@@ -26,6 +26,7 @@
     "yosay": "^1.0.4"
   },
   "devDependencies": {
+    "istanbul": "^0.3.14",
     "mocha": "^2.2.5"
   }
 }
