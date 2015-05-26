@@ -5,15 +5,15 @@ var yosay = require('yosay');
 var QUESTIONS = [{
   type: 'input',
   name: 'module:name',
-  message: 'Module name'
+  message: 'Type your module name'
 }, {
   type: 'input',
   name: 'module:description',
-  message: 'Module description'
+  message: 'Type your module description'
 }, {
   type: 'input',
   name: 'module:author',
-  message: 'Your nickname'
+  message: 'Typo your nickname'
 }, {
   type: 'list',
   name: 'module:license',
