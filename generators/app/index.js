@@ -18,6 +18,7 @@ var QUESTIONS = [{
   type: 'list',
   name: 'module:license',
   message: 'Choose a license',
+  default: 10,
   choices: [
     'Apache-2.0',
     'Artistic-2.0',
