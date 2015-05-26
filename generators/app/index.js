@@ -67,7 +67,6 @@ module.exports = yeoman.generators.Base.extend({
       this.answers = answers;
 
       fetchLicense.call(this, this.answers['module:license'], function (content) {
-        this.answers['module:license-content'] = content;
         this.write('LICENSE', content);
         done();
       }.bind(this));

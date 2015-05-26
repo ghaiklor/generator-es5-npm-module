@@ -12,4 +12,4 @@ npm install <%= answers['module:name'] %>
 
 ## License
 
-<%= answers['module:license-content'] %>
+<%= answers['module:license'] %>
