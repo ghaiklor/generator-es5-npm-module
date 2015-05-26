@@ -6,8 +6,16 @@
 
 ## Getting Started
 
+Install it via npm:
+
 ```shell
 npm install <%= answers['module:name'] %>
+```
+
+And include in your project:
+
+```javascript
+var <%= answers['module:name'] %> = require("<%= answers['module:name'] %>");
 ```
 
 ## License
