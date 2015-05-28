@@ -52,7 +52,13 @@ function fetchLicense(license, cb) {
     if (error) throw new Error(error);
 
     this.sourceRoot(path.join(cacheRoot, username, repository, branch));
-    var content = this.read(['_licenses/', license.toLowerCase(), '.txt'].join('')).replace(/-+[\d\D]*?-+\n\n/, '');
+
+    var content = this
+      .read(['_licenses/', license.toLowerCase(), '.txt'].join(''))
+      .replace(/-+[\d\D]*?-+\n\n/, '')
+      .replace(/\[year\]/g, new Date().getFullYear())
+      .replace(/\[fullname\]/g, this.answers['module:author']);
+
     this.sourceRoot(sourceRoot);
 
     cb(content);
@@ -75,7 +81,7 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   writing: function () {
-    this.directory(this.sourceRoot(), this.destinationPath());
+    this.directory(this.sourceRoot(), this.destinationRoot());
   },
 
   install: function () {
