@@ -83,6 +83,7 @@ module.exports = yeoman.generators.Base.extend({
   writing: function () {
     this.directory('lib', 'lib');
     this.directory('test', 'test');
+    this.copy('CHANGELOG.md', 'CHANGELOG.md');
     this.copy('editorconfig', '.editorconfig');
     this.copy('gitignore', '.gitignore');
     this.copy('index.js', 'index.js');
