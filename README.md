@@ -23,20 +23,23 @@ npm install -g yo generator-es5-npm-module && yo es5-npm-module
 When project is generated you will get project with that structure:
 
 ```
-|-- my-project # Root of your project
-  |-- lib # Folder with your source code
-  |  |-- index.js # Some basic script of your module
-  |-- test # Folder with tests for your module
-  |  |-- index.test.js # Testing your main script
-  |  |-- mocha.opts # File for mocha options
-  |-- .editorconfig # editorconfig for IDE with standardized JavaScript code-style
-  |-- .gitignore # gitignore template for NodeJS applications
-  |-- .jshintrc # JSHint configuration
-  |-- .npmignore # npmignore template with some stuff disabled for publish like test or .travis.yml
-  |-- .travis.yml # Travis configuration file with NodeJS 0.10, 0.12 and iojs. Also it sends coverage data to Coveralls
-  |-- index.js # Main script (entry point) because it's defined in package.json
-  |-- package.json # package.json template with minimal data here
-  |-- README.md # Readme with predefined text based on your answers
+|-- my-project
+  |-- lib
+  |  |-- index.js
+  |-- test
+  |  |-- unit
+  |  |  |-- index.test.js
+  |  |-- bootstrap.test.js
+  |  |-- mocha.opts
+  |-- .editorconfig
+  |-- .gitignore
+  |-- .jshintrc
+  |-- .npmignore
+  |-- .travis.yml
+  |-- index.js
+  |-- LICENSE
+  |-- package.json
+  |-- README.md
 ```
 
 ## License
