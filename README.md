@@ -31,6 +31,7 @@ When project is generated you will get project with that structure:
   |  |  |-- index.test.js
   |  |-- bootstrap.test.js
   |  |-- mocha.opts
+  |-- CHANGELOG.md
   |-- .editorconfig
   |-- .gitignore
   |-- .jshintrc

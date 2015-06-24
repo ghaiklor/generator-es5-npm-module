@@ -15,12 +15,18 @@ describe('app', function () {
 
   it('Should create root files', function () {
     assert.file([
+      'lib/index.js',
+      'test/unit/index.test.js',
+      'test/bootstrap.test.js',
+      'test/mocha.opts',
+      'CHANGELOG.md',
       '.editorconfig',
       '.gitignore',
       '.jshintrc',
       '.npmignore',
       '.travis.yml',
       'index.js',
+      'LICENSE',
       'package.json',
       'README.md'
     ]);
