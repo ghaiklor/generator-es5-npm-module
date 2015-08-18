@@ -61,7 +61,7 @@ function fetchLicense(license, cb) {
       .read(['_licenses/', license.toLowerCase(), '.txt'].join(''))
       .replace(/-+[\d\D]*?-+\n\n/, '')
       .replace(/\[year\]/g, new Date().getFullYear())
-      .replace(/\[fullname\]/g, this.answers['module:author']);
+      .replace(/\[fullname\]/g, this.answers['module:author:fullName']);
 
     this.sourceRoot(sourceRoot);
 
