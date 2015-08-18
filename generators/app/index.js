@@ -13,12 +13,12 @@ var QUESTIONS = [{
 }, {
   type: 'input',
   name: 'module:author',
-  message: 'Typo your nickname'
+  message: 'Typo your full name'
 }, {
   type: 'list',
   name: 'module:license',
   message: 'Choose a license',
-  default: 10,
+  default: 'MIT',
   choices: [
     'Apache-2.0',
     'Artistic-2.0',
