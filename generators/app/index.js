@@ -12,7 +12,11 @@ var QUESTIONS = [{
   message: 'Type your module description'
 }, {
   type: 'input',
-  name: 'module:author',
+  name: 'module:author:nickname',
+  message: 'Type your nickname'
+}, {
+  type: 'input',
+  name: 'module:author:fullName',
   message: 'Typo your full name'
 }, {
   type: 'list',
