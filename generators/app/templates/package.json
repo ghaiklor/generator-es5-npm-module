@@ -5,6 +5,7 @@
   "license": "<%= answers['module:license'] %>",
   "main": "index.js",
   "author": "<%= answers['module:author:nickname'] %>",
+  "repository": "<%= answers['module:author:nickname'] %>/<%= answers['module:name'] %>",
   "scripts": {
     "test": "istanbul cover _mocha"
   },
