@@ -11,7 +11,10 @@
     "url": "https://github.com/ghaiklor"
   },
   "scripts": {
-    "test": "istanbul cover _mocha"
+    "clean": "rm -rf ./coverage ./generators",
+    "compile": "npm run clean; cp -r src/ generators/; babel src --out-dir generators",
+    "prepublish": "npm run test",
+    "test": "npm run compile; istanbul cover _mocha"
   },
   "keywords": [
     "yeoman-generator",
