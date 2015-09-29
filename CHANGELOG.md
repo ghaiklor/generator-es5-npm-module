@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+- Migration from ES5 to ES6 syntax;
+
 ## 1.0.0
 
 - Add `--recursive` and `--reporter spec` into `mocha.opts` file;
