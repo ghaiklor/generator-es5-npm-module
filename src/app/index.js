@@ -94,7 +94,6 @@ export default class AppGenerator extends Base {
     this.copy('CHANGELOG.md', 'CHANGELOG.md');
     this.copy('editorconfig', '.editorconfig');
     this.copy('gitignore', '.gitignore');
-    this.copy('index.js', 'index.js');
     this.copy('jshintrc', '.jshintrc');
     this.copy('npmignore', '.npmignore');
     this.copy('package.json', 'package.json');

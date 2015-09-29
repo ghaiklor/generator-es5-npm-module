@@ -1,10 +1,10 @@
 import path from 'path';
 import { assert, test } from 'yeoman-generator';
 
-describe('app', () => {
+describe('es5-npm-module', () => {
   before(done => {
     test
-      .run(path.join(__dirname, '../generators/app'))
+      .run(path.join(__dirname, '../../src/app'))
       .withOptions({skipInstall: true})
       .withPrompts({'module:license': 'MIT'})
       .on('end', done);
@@ -22,7 +22,6 @@ describe('app', () => {
       '.jshintrc',
       '.npmignore',
       '.travis.yml',
-      'index.js',
       'LICENSE',
       'package.json',
       'README.md'
