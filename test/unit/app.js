@@ -1,19 +1,16 @@
-var path = require('path');
-var assert = require('yeoman-generator').assert;
-var helpers = require('yeoman-generator').test;
+import path from 'path';
+import { assert, test } from 'yeoman-generator';
 
-describe('app', function () {
-  before(function (done) {
-    helpers
+describe('app', () => {
+  before(done => {
+    test
       .run(path.join(__dirname, '../generators/app'))
       .withOptions({skipInstall: true})
-      .withPrompts({
-        'module:license': 'MIT'
-      })
+      .withPrompts({'module:license': 'MIT'})
       .on('end', done);
   });
 
-  it('Should create root files', function () {
+  it('Should create root files', () => {
     assert.file([
       'lib/index.js',
       'test/unit/index.test.js',
