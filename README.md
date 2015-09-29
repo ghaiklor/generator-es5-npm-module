@@ -1,6 +1,13 @@
 # generator-es5-npm-module
 
-![Build Status](https://img.shields.io/travis/ghaiklor/generator-es5-npm-module.svg) ![Coverage](https://img.shields.io/coveralls/ghaiklor/generator-es5-npm-module.svg) ![Downloads](https://img.shields.io/npm/dm/generator-es5-npm-module.svg) ![npm version](https://img.shields.io/npm/v/generator-es5-npm-module.svg) ![dependencies](https://img.shields.io/david/ghaiklor/generator-es5-npm-module.svg) ![dev dependencies](https://img.shields.io/david/dev/ghaiklor/generator-es5-npm-module.svg) ![License](https://img.shields.io/npm/l/generator-es5-npm-module.svg)
+![Build Status](https://img.shields.io/travis/ghaiklor/generator-es5-npm-module.svg)
+![Coverage](https://img.shields.io/coveralls/ghaiklor/generator-es5-npm-module.svg)
+![Downloads](https://img.shields.io/npm/dm/generator-es5-npm-module.svg)
+![Downloads](https://img.shields.io/npm/dt/generator-es5-npm-module.svg)
+![npm version](https://img.shields.io/npm/v/generator-es5-npm-module.svg)
+![dependencies](https://img.shields.io/david/ghaiklor/generator-es5-npm-module.svg)
+![dev dependencies](https://img.shields.io/david/dev/ghaiklor/generator-es5-npm-module.svg)
+![License](https://img.shields.io/npm/l/generator-es5-npm-module.svg)
 
 This generator creates project for you where you can start working with your npm module.
 
