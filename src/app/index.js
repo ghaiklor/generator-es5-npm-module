@@ -53,8 +53,6 @@ function fetchLicense(license, cb) {
   let sourceRoot = this.sourceRoot();
 
   this.remote(username, repository, branch, (error, remote) => {
-    if (error) throw new Error(error);
-
     this.sourceRoot(path.join(cacheRoot, username, repository, branch));
 
     let content = this
