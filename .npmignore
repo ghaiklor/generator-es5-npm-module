@@ -1,5 +1,5 @@
-coverage
-src
-test
-babelhook.js
-.idea
+/coverage
+/src
+/test
+/babelhook.js
+/.idea
