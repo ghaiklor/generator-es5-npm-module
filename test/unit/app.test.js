@@ -14,7 +14,7 @@ describe('es5-npm-module', () => {
     assert.file([
       'lib/index.js',
       'test/unit/index.test.js',
-      'test/bootstrap.test.js',
+      'test/bootstrap.js',
       'test/mocha.opts',
       'CHANGELOG.md',
       '.editorconfig',

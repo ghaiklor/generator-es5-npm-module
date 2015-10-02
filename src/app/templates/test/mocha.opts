@@ -1,4 +1,4 @@
-./test/bootstrap.test.js
 ./test/unit/**/*.test.js
---recursive
+--require ./test/bootstrap.js
 --reporter spec
+--recursive

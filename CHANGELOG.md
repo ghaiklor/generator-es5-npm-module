@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2
+
+- General improvements;
+
 ## 1.1.1
 
 - Fix issue with global files in `.npmignore`;
