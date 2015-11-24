@@ -40,12 +40,9 @@ When project is generated you will get project with that structure:
   |-- test
   |  |-- unit
   |  |  |-- index.test.js
-  |  |-- bootstrap.js
   |  |-- mocha.opts
-  |-- CHANGELOG.md
   |-- .editorconfig
   |-- .gitignore
-  |-- .jshintrc
   |-- .npmignore
   |-- .travis.yml
   |-- index.js
