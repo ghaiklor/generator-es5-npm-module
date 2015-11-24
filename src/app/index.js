@@ -68,8 +68,8 @@ function fetchLicense(license, cb) {
 }
 
 export default class AppGenerator extends Base {
-  constructor(...args) {
-    super(...args);
+  constructor(args, options) {
+    super(args, options);
   }
 
   prompting() {
@@ -89,10 +89,8 @@ export default class AppGenerator extends Base {
   writing() {
     this.directory('lib', 'lib');
     this.directory('test', 'test');
-    this.copy('CHANGELOG.md', 'CHANGELOG.md');
     this.copy('editorconfig', '.editorconfig');
     this.copy('gitignore', '.gitignore');
-    this.copy('jshintrc', '.jshintrc');
     this.copy('npmignore', '.npmignore');
     this.copy('package.json', 'package.json');
     this.copy('README.md', 'README.md');
