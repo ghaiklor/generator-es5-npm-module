@@ -7,10 +7,12 @@
   "author": "<%= answers['module:author:nickname'] %>",
   "repository": "<%= answers['module:author:nickname'] %>/<%= answers['module:name'] %>",
   "scripts": {
+    "coveralls": "cat coverage/lcov.info | coveralls",
     "test": "istanbul cover _mocha"
   },
   "devDependencies": {
     "chai": "*",
+    "coveralls": "*",
     "istanbul": "*",
     "mocha": "*",
     "sinon": "*"

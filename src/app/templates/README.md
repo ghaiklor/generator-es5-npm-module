@@ -19,7 +19,7 @@ Install it via npm:
 npm install <%= answers['module:name'] %>
 ```
 
-And include in your project:
+Include in your project:
 
 ```javascript
 var <%= answers['module:name'] %> = require("<%= answers['module:name'] %>");
