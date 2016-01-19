@@ -1,6 +1,8 @@
-import { Base } from 'yeoman-generator';
-import path from 'path';
-import yosay from 'yosay';
+"use strict";
+
+const Base = require('yeoman-generator');
+const path = require('path');
+const yosay = require('yosay');
 
 const QUESTIONS = [{
   type: 'input',
@@ -67,13 +69,13 @@ function fetchLicense(license, cb) {
   });
 }
 
-export default class AppGenerator extends Base {
+module.exports = class AppGenerator extends Base {
   constructor(args, options) {
     super(args, options);
   }
 
   prompting() {
-    let done = this.async();
+    const done = this.async();
 
     this.log(yosay('Welcome to the extraordinary ES5 npm module generator!'));
     this.prompt(QUESTIONS, answers => {
@@ -100,4 +102,4 @@ export default class AppGenerator extends Base {
   install() {
     this.npmInstall();
   }
-}
+};

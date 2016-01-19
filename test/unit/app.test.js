@@ -1,10 +1,13 @@
-import path from 'path';
-import { assert, test } from 'yeoman-generator';
+"use strict";
+
+const path = require('path');
+const assert = require('yeoman-generator').assert;
+const test = require('yeoman-generator').test;
 
 describe('es5-npm-module', () => {
   before(done => {
     test
-      .run(path.join(__dirname, '../../src/app'))
+      .run(path.join(__dirname, '../../generators/app'))
       .withPrompts({'module:license': 'MIT'})
       .on('end', done);
   });
