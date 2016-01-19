@@ -1,6 +1,6 @@
 "use strict";
 
-const Base = require('yeoman-generator');
+const Base = require('yeoman-generator').Base;
 const path = require('path');
 const yosay = require('yosay');
 

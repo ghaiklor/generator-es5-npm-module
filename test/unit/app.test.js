@@ -1,8 +1,8 @@
 "use strict";
 
 const path = require('path');
-const assert = require('yeoman-generator').assert;
-const test = require('yeoman-generator').test;
+const assert = require('yeoman-assert');
+const test = require('yeoman-test');
 
 describe('es5-npm-module', () => {
   before(done => {
