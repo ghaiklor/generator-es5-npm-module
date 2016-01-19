@@ -48,16 +48,16 @@ const QUESTIONS = [{
  * @param {Function} cb Callback function with license content as argument
  */
 function fetchLicense(license, cb) {
-  let username = 'github';
-  let repository = 'choosealicense.com';
-  let branch = 'gh-pages';
-  let cacheRoot = this.cacheRoot();
-  let sourceRoot = this.sourceRoot();
+  const username = 'github';
+  const repository = 'choosealicense.com';
+  const branch = 'gh-pages';
+  const cacheRoot = this.cacheRoot();
+  const sourceRoot = this.sourceRoot();
 
   this.remote(username, repository, branch, (error, remote) => {
     this.sourceRoot(path.join(cacheRoot, username, repository, branch));
 
-    let content = this
+    const content = this
       .read(['_licenses/', license.toLowerCase(), '.txt'].join(''))
       .replace(/-+[\d\D]*?-+\n\n/, '')
       .replace(/\[year\]/g, new Date().getFullYear())
@@ -70,10 +70,6 @@ function fetchLicense(license, cb) {
 }
 
 module.exports = class AppGenerator extends Base {
-  constructor(args, options) {
-    super(args, options);
-  }
-
   prompting() {
     const done = this.async();
 
