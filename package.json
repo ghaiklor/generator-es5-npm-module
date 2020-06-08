@@ -29,7 +29,7 @@
     "ES5"
   ],
   "dependencies": {
-    "yeoman-generator": "4.8.0",
+    "yeoman-generator": "4.10.0",
     "yosay": "2.0.2"
   },
   "devDependencies": {
