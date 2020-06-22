@@ -26,3 +26,5 @@ patch:
         patched: '2020-05-01T01:23:38.670Z'
     - yeoman-generator > yeoman-environment > yeoman-generator > yeoman-environment > inquirer > lodash:
         patched: '2020-05-01T01:23:38.670Z'
+    - yeoman-generator > grouped-queue > lodash:
+        patched: '2020-06-08T17:55:04.885Z'
